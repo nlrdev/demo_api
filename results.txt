@@ -1,0 +1,20 @@
+> Content-Type: application/json
+> Content-Length: 298
+>
+* upload completely sent off: 298 out of 298 bytes
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< Server: gunicorn
+< Date: Tue, 08 Feb 2022 22:08:14 GMT
+< Connection: close
+< Content-Type: application/json
+< Vary: Accept, Cookie
+< Allow: POST, OPTIONS
+< X-Frame-Options: DENY
+< Content-Length: 57
+< X-Content-Type-Options: nosniff
+< Referrer-Policy: same-origin
+< Cross-Origin-Opener-Policy: same-origin
+<
+* Closing connection 0
+{"DecryptedMessage": "b'' decrypted using GPG topsecret"}%            
