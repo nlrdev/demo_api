@@ -1,0 +1,6 @@
+django
+gunicorn
+djangorestframework
+django-environ
+bleach
+python-gnupg
