@@ -6,9 +6,10 @@ from .serializers import DecryptMessageSerializer
 
 class DecryptMessageAPI(APIView):
     def post(self, request):
-        data = DecryptMessageSerializer(data=request.data)
-        if data.is_valid():
+        serializer = DecryptMessageSerializer(data=request.data)
+        if serializer.is_valid():
+            data = serializer.decrypted_data()
             return HttpResponse(
-                    json.dumps({"DecryptedMessage": f"{data.message} decrypted using GPG {data.passphrase}"}),
+                    json.dumps({"DecryptedMessage": f"{data['message']} decrypted using GPG {data['passphrase']}"}),
                     content_type="application/json",
                 )
