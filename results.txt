@@ -18,3 +18,6 @@
 <
 * Closing connection 0
 {"DecryptedMessage": "b'' decrypted using GPG topsecret"}%            
+
+
+I have read PythonWebService.pdf in its entirety and agree to its terms.
